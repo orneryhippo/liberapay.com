@@ -1,1 +1,1 @@
-web: gunicorn librapay.main:website 
+web: gunicorn liberapay.main:website 
