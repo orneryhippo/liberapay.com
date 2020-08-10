@@ -65,7 +65,8 @@ env = Environment(
     INSTANCE_TYPE=str,
 )
 
-logging.basicConfig(level=getattr(logging, env.logging_level.upper()))
+#logging.basicConfig(level=getattr(logging, env.logging_level.upper()))
+logging.basicConfig(level=getattr(logging, env.LOGGING_LEVEL.upper()))
 
 if env.log_dir[:1] == '$':
     var_name = env.log_dir[1:]
